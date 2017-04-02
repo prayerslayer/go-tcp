@@ -5,8 +5,9 @@ It's called `tcp` because I originally started with the TCP syscalls, but then I
 ## Run
 
 ~~~ bash
-export TCP_DIR=$GOPATH/src/github.com/prayerslayer/tcp
-git clone https://github.com/prayerslayer/tcp.git $TCP_DIR
+export TCP_REPO=github.com/prayerslayer/go-tcp
+export TCP_DIR=$GOPATH/src/$TCP_REPO
+git clone https://$TCP_REPO.git $TCP_DIR
 cd $TCP_DIR
 go run main.go
 # then elsewhere 'curl localhost:3000'
